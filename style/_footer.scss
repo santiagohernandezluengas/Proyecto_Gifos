@@ -1,0 +1,17 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px;
+    height: 150px;
+}
+
+.redesSociales ul{
+    display: inline-flex;
+    flex-direction: row;
+
+    li{
+        padding: 0px 10px 20px 10px;
+    }
+}
