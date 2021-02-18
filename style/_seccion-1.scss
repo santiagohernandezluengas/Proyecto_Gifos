@@ -25,12 +25,22 @@
     }
 }
 
-.buscador{
-    padding-bottom: 0px;
-    border-color: $colorPrincipal;
-    border-radius: 20%;
+.contenedorBuscador{
+    border: solid 2px;
+    border-radius: 60px; 
     width: 300px;
-    height: 30px;
+    height: 40px;
+    border-color: $colorPrincipal;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.buscador{
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-bottom: 0px;
+    border: none;
 }
 
 .trending{
@@ -43,6 +53,7 @@
     }
 
     p{
+        padding-top: 5px;
         color: $colorPrincipal;
     }
 }
