@@ -7,7 +7,14 @@ footer{
     height: 150px;
 }
 
+.contenedorRedes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .redesSociales ul{
+   padding-top: 8px;
     display: inline-flex;
     flex-direction: row;
 
@@ -16,9 +23,20 @@ footer{
     }
 }
 
-@media screen and (min-width: 500px){
+@media screen and (min-width: 600px){
     footer{
         flex-direction: row;
-        
+        justify-content: space-between;
+        padding-left: 80px;
+        padding-right: 80px;
+
+        .contenedorRedes{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .redesSociales{
+            padding-top: 0px;
+        }
     }
 }
