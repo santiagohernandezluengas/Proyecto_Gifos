@@ -6,7 +6,7 @@ header{
     min-height: 10vh;
 }
 
-header ul{
+.linksMenu{
     position: absolute;
     left: 0px;
     top: 10vh;
@@ -15,10 +15,22 @@ header ul{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: center;
     height: 0px;
     overflow: hidden;
+
+    a{
+        text-decoration: none;
+        color: white;
+        margin-left: 15px;
+        font-family: $fuenteTitulos;
+        font-size: 14px;
+    }
 }
+
+.menuHamburguesaActivo{
+        height: 90vh;
+    }
 
 /* Menu para desktop */
 
@@ -36,7 +48,7 @@ header{
     display: none;
 }
 
-header ul{
+.linksMenu{
     position: relative;
     top: 0;
     background: unset;

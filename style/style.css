@@ -12,7 +12,7 @@ header {
   min-height: 10vh;
 }
 
-header ul {
+.linksMenu {
   position: absolute;
   left: 0px;
   top: 10vh;
@@ -27,11 +27,23 @@ header ul {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 0px;
   overflow: hidden;
+}
+
+.linksMenu a {
+  text-decoration: none;
+  color: white;
+  margin-left: 15px;
+  font-family: "Montserrat-Bold";
+  font-size: 14px;
+}
+
+.menuHamburguesaActivo {
+  height: 90vh;
 }
 
 /* Menu para desktop */
@@ -45,7 +57,7 @@ header ul {
   .fotoMenuHamburguesa {
     display: none;
   }
-  header ul {
+  .linksMenu {
     position: relative;
     top: 0;
     background: unset;
@@ -61,10 +73,10 @@ header ul {
         justify-content: space-around;
     padding-right: 50px;
   }
-  header ul li {
+  .linksMenu li {
     padding-right: 40px;
   }
-  header ul a {
+  .linksMenu a {
     text-decoration: none;
     font-family: "Montserrat-Bold";
     color: #572EE5;
