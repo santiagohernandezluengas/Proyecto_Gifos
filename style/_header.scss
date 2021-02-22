@@ -3,5 +3,59 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 0px 20px 0px 20px;
+    min-height: 10vh;
+}
+
+header ul{
+    position: absolute;
+    left: 0px;
+    top: 10vh;
+    width: 100%;
+    background-color: $colorPrincipal;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 0px;
+    overflow: hidden;
+}
+
+/* Menu para desktop */
+
+@media screen and (min-width: 520px){
+
+header{
     min-height: 15vh;
+}
+
+.contenedorLogo{
+    padding-left: 70px;
+}
+
+.fotoMenuHamburguesa{
+    display: none;
+}
+
+header ul{
+    position: relative;
+    top: 0;
+    background: unset;
+    height: unset;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 50px;
+
+    li{
+        padding-right: 40px;
+    }
+
+    a{
+        text-decoration: none;
+        font-family: $fuenteTitulos;
+        color: $colorPrincipal;
+        font-weight: bold;
+    }
+}
+
 }

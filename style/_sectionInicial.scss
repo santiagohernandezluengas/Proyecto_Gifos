@@ -57,3 +57,13 @@
         color: $colorPrincipal;
     }
 }
+
+/* Mediaquery para desktop */
+
+@media screen and (min-width: 520px){
+
+.sectionInicial{
+    padding-top: 30px;
+}
+
+}
