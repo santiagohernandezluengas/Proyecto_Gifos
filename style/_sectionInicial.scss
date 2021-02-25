@@ -1,69 +1,88 @@
-.sectionInicial{
+.sectionInicial {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
-.titulo-principal{
-    h1{
+.titulo-principal {
+    h1 {
         text-align: center;
         font-size: 25px;
         font-family: $fuenteTitulos;
         color: $colorPrincipal;
-        .GIFOS{
+        transition: 0.3s ease all;
+        body.dark & {
+            color: $blanco;
+        }
+        .GIFOS {
             color: $colorSecundario;
         }
     }
 }
 
-.contenedorIlustracionHeader{
+.contenedorIlustracionHeader {
     padding-top: 30px;
     display: flex;
     justify-content: center;
-    img{
+    img {
         max-width: 250px;
     }
 }
 
-.contenedorBuscador{
+.contenedorBuscador {
     border: solid 2px;
-    border-radius: 60px; 
+    border-radius: 60px;
     width: 300px;
     height: 40px;
     border-color: $colorPrincipal;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    transition: 0.3s ease all;
+    body.dark & {
+        border-color: $colorDark2;
+    }
 }
 
-.buscador{
+.buscador {
+    height: 30px;
     margin-left: 10px;
     padding-left: 10px;
     padding-bottom: 0px;
     border: none;
+    transition: 0.3s ease all;
+    body.dark & {
+        background-color: $colorDark1;
+    }
 }
 
-.trending{
+.trending {
     padding-top: 30px;
     padding-bottom: 30px;
-    h2{
+    h2 {
         text-align: center;
         color: $colorPrincipal;
         font-weight: bold;
+        transition: 0.3s ease all;
+        body.dark & {
+            color: $blanco;
+        }
     }
 
-    p{
+    p {
         padding-top: 5px;
         color: $colorPrincipal;
+        transition: 0.3s ease all;
+        body.dark & {
+            color: $blanco;
+        }
     }
 }
 
 /* Mediaquery para desktop */
 
-@media screen and (min-width: 520px){
-
-.sectionInicial{
-    padding-top: 30px;
-}
-
+@media screen and (min-width: 520px) {
+    .sectionInicial {
+        padding-top: 30px;
+    }
 }

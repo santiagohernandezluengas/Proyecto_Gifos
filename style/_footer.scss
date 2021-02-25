@@ -5,6 +5,10 @@ footer{
     align-items: center;
     padding-top: 30px;
     height: 150px;
+    transition: .3s ease all;
+        body.dark &{
+            color: $blanco;
+        }
 }
 
 .contenedorRedes{

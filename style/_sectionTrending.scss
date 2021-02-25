@@ -1,28 +1,41 @@
-.sectionTrending{
+.sectionTrending {
     padding-top: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: #F3F5F8;
+    background-color: #f3f5f8;
+    transition: 0.3s ease all;
 
-    h2{
+    body.dark & {
+        background-color: $colorDark2;
+    }
+
+    h2 {
         color: $colorPrincipal;
         font-weight: bold;
         padding-bottom: 20px;
+        transition: 0.3s ease all;
+        body.dark & {
+            color: $blanco;
+        }
     }
 
-    legend{
+    legend {
         padding-bottom: 20px;
         text-align: center;
+        transition: 0.3s ease all;
+        body.dark & {
+            color: $blanco;
+        }
     }
 
-    ul{
+    ul {
         display: flex;
         flex-direction: row;
         padding-bottom: 30px;
 
-        li{
+        li {
             padding-right: 20px;
         }
     }

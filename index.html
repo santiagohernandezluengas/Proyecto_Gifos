@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,72 +7,63 @@
     <link rel="stylesheet" href="style/style.css">
     <title>Proyecto GIFOS</title>
 </head>
-
 <body>
-
     <header>
         <div class="contenedorLogo">
-            <img src="./img/assets/logo-mobile.svg" alt="logo mobile">
+            <img src="./img/assets/logo-mobile.svg" alt="logo mobile" class="img">
         </div>
         <div class="menuHamburguesa">
-            <img class = "fotoMenuHamburguesa" src="./img/assets/burger.svg" alt="Menu Hamburguesa">
-            <ul class="linksMenu"> 
-                <li> <a href=#> Modo Nocturno </a> </li>
-                <li> <a href=#> Favoritos </a> </li>
-                <li> <a href=#> Mis Gifos </a> </li>
-                <li> <a href=#> <img src="./img/assets/button-crear-gifo.svg" alt="Boton crear Gifo"> </a> </li>
+            <img class="fotoMenuHamburguesa" src="./img/assets/burger.svg" alt="Menu Hamburguesa" onclick="ocultar()">
+            <ul class="linksMenu">
+                <li> <button id="nocturno" class="btn"><a href="#">MODO <span class="change"> </span></a></button></li>
+                <li> <a href="#"> Favoritos </a></li>
+                <li> <a href="#"> Mis Gifos </a></li>
+                <li> <a href="#"><img id="circuloMas" src="./img/assets/button-crear-gifo.svg" alt="Boton crear Gifo"></a></li>
             </ul>
         </div>
     </header>
-
     <main>
         <section class="sectionInicial">
             <div class="titulo-principal">
                 <h1>Inspírate, busca, <br> guarda, y crea los <br> mejores <span class="GIFOS">GIFOS</span> </h1>
             </div>
-
             <div class="contenedorIlustracionHeader">
                 <img src="./img/assets/ilustra_header.svg" alt="imagen buscador">
             </div>
-
             <div class="contenedorBuscador">
                 <input type="text" class="buscador" placeholder="Busca GIFOS y más">
                 <img src="./img/assets/icon-search.svg" alt="lupa">
             </div>
-
             <div class="trending">
                 <h2>Trending:</h2>
                 <p>Reactions, Entertaiment, <br> Sports, Stickers, Artists</p>
             </div>
-
         </section>
-
         <section class="sectionTrending">
             <h2>Trending Gifos</h2>
             <legend>Mira los últimos <br> GIFOS de nuestra comunidad</legend>
             <ul>
                 <li><img src="https://via.placeholder.com/150" alt=""></li>
                 <li><img src="https://via.placeholder.com/150" alt=""></li>
+                <li><img src="https://via.placeholder.com/150" alt=""></li>
             </ul>
         </section>
-
     </main>
-
     <footer>
         <div class="contenedorRedes">
             <p>Compartir en:</p>
             <div class="redesSociales">
                 <ul>
-                    <li><img src="./img/assets/icon_facebook.svg" alt="facebook"></li>
-                    <li><img src="./img/assets/icon-twitter.svg" alt="twitter"></li>
-                    <li><img src="./img/assets/icon_instagram.svg" alt="instagram"></li>
+                    <li><a href=""><img src="./img/assets/icon_facebook.svg" alt="facebook"></a></li>
+                    <li><a href=""><img src="./img/assets/icon-twitter.svg" alt="twitter"></a></li>
+                    <li><a href=""><img src="./img/assets/icon_instagram.svg" alt="instagram"></a></li>
                 </ul>
             </div>
         </div>
         <span>© GIFOS 2020 All Rights Reserved</span>
     </footer>
-
     <script src="./js/app.js"></script>
+    <script src="./js/modo-nocturno.js"></script>
+    <script src="./js/ocultar.js"></script>
 </body>
-
 </html>

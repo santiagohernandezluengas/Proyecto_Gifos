@@ -12,6 +12,22 @@ header {
   min-height: 10vh;
 }
 
+button {
+  border: none;
+  background: #572EE5;
+}
+
+/*<===================Cambio dei imagen================>
+.img{
+    background-image: url("../img/assets/logo-mobile.svg");
+    transition: .3s ease all;
+    body.dark & {
+        background-image: url("../img/assets/logo-mobile-modo-noct.svg");
+        z-index: 1000;
+    }
+}
+<======================================================>
+*/
 .linksMenu {
   position: absolute;
   left: 0px;
@@ -34,6 +50,10 @@ header {
   overflow: hidden;
 }
 
+body.dark .linksMenu a {
+  color: #FFF;
+}
+
 .linksMenu a {
   text-decoration: none;
   color: white;
@@ -43,13 +63,22 @@ header {
 }
 
 .menuHamburguesaActivo {
-  height: 90vh;
+  height: 100vh;
 }
 
 /* Menu para desktop */
 @media screen and (min-width: 520px) {
   header {
     min-height: 15vh;
+  }
+  button {
+    border: none;
+    background: #fff;
+    -webkit-transition: .3S ease ALL;
+    transition: .3S ease ALL;
+  }
+  body.dark button {
+    background-color: #37383C;
   }
   .contenedorLogo {
     padding-left: 70px;
@@ -105,6 +134,12 @@ header {
   font-size: 25px;
   font-family: "Montserrat-Bold";
   color: #572EE5;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+body.dark .titulo-principal h1 {
+  color: #FFF;
 }
 
 .titulo-principal h1 .GIFOS {
@@ -139,13 +174,26 @@ header {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+body.dark .contenedorBuscador {
+  border-color: #222326;
 }
 
 .buscador {
+  height: 30px;
   margin-left: 10px;
   padding-left: 10px;
   padding-bottom: 0px;
   border: none;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+body.dark .buscador {
+  background-color: #37383C;
 }
 
 .trending {
@@ -157,11 +205,23 @@ header {
   text-align: center;
   color: #572EE5;
   font-weight: bold;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+body.dark .trending h2 {
+  color: #FFF;
 }
 
 .trending p {
   padding-top: 5px;
   color: #572EE5;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+body.dark .trending p {
+  color: #FFF;
 }
 
 /* Mediaquery para desktop */
@@ -186,6 +246,12 @@ footer {
           align-items: center;
   padding-top: 30px;
   height: 150px;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+}
+
+body.dark footer {
+  color: #FFF;
 }
 
 .contenedorRedes {
@@ -259,18 +325,36 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #F3F5F8;
+  background-color: #f3f5f8;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+body.dark .sectionTrending {
+  background-color: #222326;
 }
 
 .sectionTrending h2 {
   color: #572EE5;
   font-weight: bold;
   padding-bottom: 20px;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+body.dark .sectionTrending h2 {
+  color: #FFF;
 }
 
 .sectionTrending legend {
   padding-bottom: 20px;
   text-align: center;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+body.dark .sectionTrending legend {
+  color: #FFF;
 }
 
 .sectionTrending ul {
@@ -295,5 +379,16 @@ footer {
           box-sizing: border-box;
   list-style: none;
   scroll-behavior: smooth;
+  outline: none;
+}
+
+body {
+  background-color: #FFF;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+}
+
+body.dark {
+  background-color: #37383C;
 }
 /*# sourceMappingURL=style.css.map */

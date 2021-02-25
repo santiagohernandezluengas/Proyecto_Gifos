@@ -5,7 +5,21 @@ header{
     padding: 0px 20px 0px 20px;
     min-height: 10vh;
 }
-
+button{
+    border: none;
+    background: $colorPrincipal;
+}
+/*<===================Cambio dei imagen================>
+.img{
+    background-image: url("../img/assets/logo-mobile.svg");
+    transition: .3s ease all;
+    body.dark & {
+        background-image: url("../img/assets/logo-mobile-modo-noct.svg");
+        z-index: 1000;
+    }
+}
+<======================================================>
+*/
 .linksMenu{
     position: absolute;
     left: 0px;
@@ -18,6 +32,11 @@ header{
     align-items: center;
     height: 0px;
     overflow: hidden;
+    body.dark &{
+        a{
+            color: #FFF;
+        }
+    }
 
     a{
         text-decoration: none;
@@ -29,7 +48,7 @@ header{
 }
 
 .menuHamburguesaActivo{
-        height: 90vh;
+        height: 100vh;
     }
 
 /* Menu para desktop */
@@ -38,6 +57,14 @@ header{
 
 header{
     min-height: 15vh;
+}
+button{
+    border: none;
+    background: #fff;
+    transition: .3S ease ALL;
+    body.dark &{
+        background-color: $colorDark1;
+    }
 }
 
 .contenedorLogo{
