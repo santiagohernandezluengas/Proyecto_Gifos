@@ -3,11 +3,11 @@ let apiKey = "78xWjowjxEa44SP5lO0EdkbLJ1VRFPb3";
         function init() {
             document.getElementById("btnSearch").addEventListener("click", ev => {
                 ev.preventDefault();
-                let url = "https://api.giphy.com/v1/gifs/search?api_key=" +apiKey+ "&limit=1&q=";
+                let urlSearch = "https://api.giphy.com/v1/gifs/search?api_key=" +apiKey+ "&limit=2&q=";
                 let str = document.getElementById("search").value.trim();
-                url = url.concat(str);
-                console.log(url);
-                fetch(url)
+                urlSearch = urlSearch.concat(str);
+                console.log(urlSearch);
+                fetch(urlSearch)
                     .then(Response => Response.json())
                     .then(content =>{
                         console.log(content.data)
